@@ -23,6 +23,10 @@ sleep 2
 
 cliente = clientes[id_cliente]
 
-puts "Nome: #{cliente[:nome]}"
-puts "Data de Cadastro: #{cliente[:data_cadastro]}"
-puts "Cidade: #{cliente[:cidade]}"
+if cliente != nil
+    puts "Nome: #{cliente[:nome]}"
+    puts "Data de Cadastro: #{cliente[:data_cadastro]}"
+    puts "Cidade: #{cliente[:cidade]}"
+else
+    puts "Cliente não encontrado!"
+end
